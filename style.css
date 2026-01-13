@@ -1,1 +1,266 @@
-style.css
+:root{
+  --bg: #0b0b12;
+  --bg2:#141429;
+  --text:#f5f3ff;
+  --muted: rgba(245,243,255,.75);
+
+  --glass: rgba(255,255,255,.06);
+  --border: rgba(255,255,255,.12);
+
+  --a1:#8fd3f4;
+  --a2:#c77dff;
+}
+
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+body{
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: radial-gradient(circle at top, var(--bg2), var(--bg));
+  color: var(--text);
+  line-height:1.6;
+}
+
+h1,h2,h3{
+  font-family:"Playfair Display", serif;
+  letter-spacing:.5px;
+}
+
+a{ color: inherit; }
+
+/* HERO */
+.hero{
+  min-height: 100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding: 2.5rem 1.5rem;
+}
+
+.hero-content{
+  position:relative;
+  width:min(720px, 100%);
+  padding: 1.5rem 1rem;
+}
+
+.aura{
+  position:absolute;
+  top:-60px;
+  left:50%;
+  transform: translateX(-50%);
+  width: 420px;
+  opacity:.18;
+  z-index:0;
+  pointer-events:none;
+}
+
+.prisma{
+  width: 230px;
+  margin: 0 auto 1.2rem;
+  display:block;
+  position:relative;
+  z-index:1;
+
+  filter: drop-shadow(0 0 28px rgba(160,255,255,.45));
+  animation: flutuar 6.5s ease-in-out infinite;
+}
+
+@keyframes flutuar{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-14px); }
+  100%{ transform: translateY(0); }
+}
+
+.hero h1{
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  margin-bottom: .3rem;
+  position:relative;
+  z-index:1;
+}
+
+.hero p{
+  color: var(--muted);
+  margin-bottom: 1.4rem;
+  position:relative;
+  z-index:1;
+}
+
+.hero-actions{
+  display:flex;
+  gap:.8rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  position:relative;
+  z-index:1;
+}
+
+/* BUTTONS */
+.btn{
+  display:inline-block;
+  padding: .85rem 1.6rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--a1), var(--a2));
+  color: #0b0b12;
+  font-weight: 700;
+  text-decoration:none;
+  transition: transform .25s, box-shadow .25s, opacity .25s;
+  box-shadow: 0 12px 40px rgba(199,125,255,.18);
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 55px rgba(199,125,255,.30);
+}
+
+.btn-ghost{
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+  box-shadow:none;
+}
+
+.btn-ghost:hover{
+  opacity:.9;
+}
+
+/* SECTIONS */
+.section{
+  width: min(940px, 92%);
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.divider{
+  width: 230px;
+  display:block;
+  margin: 0 auto 1rem;
+  opacity:.85;
+}
+
+.section h2{
+  font-size: 2rem;
+  margin-bottom: .8rem;
+  text-align:center;
+}
+
+.section p{
+  color: var(--muted);
+  text-align:center;
+  max-width: 760px;
+  margin: 0.2rem auto 0;
+}
+
+/* SEPARATOR (spiral) */
+.separador{
+  display:flex;
+  justify-content:center;
+  margin: 0.2rem 0 1.2rem;
+}
+
+.separador img{
+  width: 130px;
+  opacity: .25;
+}
+
+/* CARDS */
+.cards{
+  margin-top: 2rem;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.2rem;
+}
+
+.card{
+  background: var(--glass);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: transform .25s, border-color .25s;
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  border-color: rgba(199,125,255,.35);
+}
+
+.card h3{
+  font-size: 1.35rem;
+  margin-bottom: .6rem;
+}
+
+.card p{
+  text-align:left;
+  margin:0;
+  color: var(--muted);
+}
+
+.card-footer{
+  margin-top: 1.2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: .8rem;
+}
+
+.price{
+  font-weight: 700;
+  color: #d8c7ff;
+}
+
+.mini-btn{
+  padding: .55rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration:none;
+  font-weight: 600;
+  background: rgba(255,255,255,.05);
+  transition: transform .2s, opacity .2s;
+}
+
+.mini-btn:hover{
+  transform: translateY(-2px);
+  opacity: .9;
+}
+
+/* STEPS */
+.steps{
+  margin: 1.6rem auto 0;
+  padding-left: 1.2rem;
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.steps li{
+  margin: .65rem 0;
+}
+
+.cta{
+  margin-top: 2rem;
+  text-align:center;
+}
+
+.cta p{
+  margin-bottom: .9rem;
+}
+
+.disclaimer{
+  margin-top: 2rem !important;
+  font-size: .9rem;
+  opacity: .75;
+}
+
+/* FOOTER */
+.footer{
+  border-top: 1px solid rgba(255,255,255,.08);
+  text-align:center;
+  padding: 2rem 1rem;
+  color: rgba(245,243,255,.65);
+}
+
+/* MOBILE tweaks */
+@media (max-width: 480px){
+  .aura{ width: 340px; top:-40px; }
+  .prisma{ width: 200px; }
+  .divider{ width: 200px; }
+}
