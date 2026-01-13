@@ -382,4 +382,22 @@ a{ color: inherit; }
   border-radius: 2px;
 }
 
+.whatsapp-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 1.2rem;
+}
 
+.whatsapp-icon{
+  width: 54px;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 12px rgba(199,125,255,0.45));
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.whatsapp-icon:hover{
+  transform: scale(1.08);
+  opacity: 1;
+}
