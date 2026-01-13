@@ -166,10 +166,16 @@ a{ color: inherit; }
 }
 
 /* SEPARATOR (spiral) */
-.separador{
-  display:flex;
-  justify-content:center;
-  margin: 0.2rem 0 1.2rem;
+.separador img{
+  width: 140px;
+  opacity: 0.45;
+  filter:
+    drop-shadow(0 0 10px rgba(199,125,255,0.5))
+    sepia(1)
+    hue-rotate(250deg)
+    saturate(1.5);
+}
+
 }
 
 .separador img{
