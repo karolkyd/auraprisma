@@ -264,3 +264,9 @@ a{ color: inherit; }
   .prisma{ width: 200px; }
   .divider{ width: 200px; }
 }
+.separador img{
+  width: 140px;
+  opacity: 0.35;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.35));
+}
+
