@@ -306,5 +306,68 @@ a{ color: inherit; }
 .separador img{
   animation: girar 120s linear infinite;
 }
+/* TOPBAR (menu fixo) */
+.topbar{
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(980px, 92%);
+  padding: 12px 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  background: rgba(20, 20, 41, 0.55);
+  border: 1px solid rgba(255,255,255,0.10);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+
+  z-index: 999;
+}
+
+.brand{
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .4px;
+}
+
+.navlinks{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navlinks a{
+  text-decoration: none;
+  color: rgba(245,243,255,.82);
+  font-weight: 600;
+  font-size: .95rem;
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition: background .2s, opacity .2s;
+}
+
+.navlinks a:hover{
+  background: rgba(199,125,255,0.16);
+}
+
+.nav-cta{
+  background: linear-gradient(90deg, var(--a1), var(--a2));
+  color: #0b0b12 !important;
+}
+
+/* Espaço pro menu não tapar o conteúdo */
+.hero{
+  padding-top: 90px;
+}
+
+/* Mobile: esconde links e deixa só CTA */
+@media (max-width: 560px){
+  .navlinks a:not(.nav-cta){ display: none; }
+}
 
 
