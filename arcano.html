@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arcano Pessoal + Arcano do Ano • Aura Prisma</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Menu (igual do index) -->
+  <nav class="topbar">
+    <a class="brand" href="index.html#topo">Aura Prisma</a>
+
+    <div class="navlinks">
+      <a href="index.html#servicos">Serviços</a>
+      <a href="index.html#como-funciona">Como funciona</a>
+      <a class="nav-cta" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-content">
+      <img class="page-prisma" src="assets/images/prisma.png" alt="Prisma Aura Prisma">
+      <h1>Arcano Pessoal + Arcano do Ano</h1>
+      <p>Uma leitura completa em PDF, com interpretação simbólica e orientações para o seu ciclo.</p>
+
+      <div class="page-actions">
+        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+        <a class="btn btn-ghost" href="index.html#servicos">Voltar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <img class="divider" src="assets/images/divisor.png" alt="">
+      <h2>O que você recebe</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Arcano Pessoal</h3>
+          <p>Essência, missão, luz e sombra do seu arquétipo (não muda com o tempo).</p>
+        </article>
+
+        <article class="card">
+          <h3>Arcano do Ano</h3>
+          <p>Energia do seu ciclo atual: temas, oportunidades e alertas do período.</p>
+        </article>
+
+        <article class="card">
+          <h3>Orientações práticas</h3>
+          <p>Conselhos para amor, estudos/trabalho, espiritualidade e energia pessoal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <img class="divider" src="assets/images/divisor.png" alt="">
+      <h2>Como pedir</h2>
+
+      <ol class="steps">
+        <li><strong>Me chame no WhatsApp</strong> e diga que quer a leitura “Arcano”.</li>
+        <li><strong>Envie seus dados</strong>: nome + data de nascimento (e se souber, horário e cidade).</li>
+        <li><strong>Você recebe o PDF</strong> no prazo combinado, com entrega organizada.</li>
+      </ol>
+
+      <div class="whatsapp-box" style="margin-top: 1.4rem;">
+        <a href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">
+          <img src="assets/images/whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+
+        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">
+          Pedir no WhatsApp
+        </a>
+      </div>
+
+      <p class="disclaimer">
+        Conteúdo espiritual para autoconhecimento • não substitui orientação profissional.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aura Prisma</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
