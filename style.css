@@ -269,4 +269,13 @@ a{ color: inherit; }
   opacity: 0.35;
   filter: drop-shadow(0 0 10px rgba(255,255,255,0.35));
 }
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.separador img{
+  animation: girar 120s linear infinite;
+}
+
 
