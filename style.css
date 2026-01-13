@@ -368,5 +368,18 @@ a{ color: inherit; }
 @media (max-width: 560px){
   .navlinks a:not(.nav-cta){ display: none; }
 }
+#como-funciona h2{
+  color: rgba(245,243,255,0.98);
+  text-shadow: 0 3px 14px rgba(0,0,0,0.45);
+}
+#como-funciona h2::after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 10px auto 0;
+  background: linear-gradient(90deg, var(--a1), var(--a2));
+  border-radius: 2px;
+}
 
 
