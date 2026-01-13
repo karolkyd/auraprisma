@@ -6,5 +6,104 @@
   <title>Aura Prisma</title>
 
   <link rel="stylesheet" href="style.css" />
-  <link re
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
 
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <img class="aura" src="assets/images/circulos.png" alt="">
+      <img class="prisma" src="assets/images/prisma.png" alt="Prisma Aura Prisma">
+
+      <h1>Aura Prisma</h1>
+      <p>Leituras espirituais para autoconhecimento e ciclos da alma</p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#servicos">Ver serviços</a>
+        <a class="btn btn-ghost" href="#como-funciona">Como funciona</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <img class="divider" src="assets/images/divisor.png" alt="">
+      <h2>Sobre</h2>
+      <p>
+        O Aura Prisma é um espaço de leitura simbólica: Arcanos, Numerologia e Astrologia
+        como ferramentas de reflexão e consciência. Entregas em PDF, com linguagem clara e
+        estética espiritual.
+      </p>
+    </section>
+
+    <div class="separador">
+      <img src="assets/images/espiral.png" alt="Espiral">
+    </div>
+
+    <section id="servicos" class="section">
+      <img class="divider" src="assets/images/divisor.png" alt="">
+      <h2>Serviços</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Arcano Pessoal + Arcano do Ano</h3>
+          <p>Leitura completa em PDF: essência, desafios, luz/sombra e orientações do ciclo.</p>
+          <div class="card-footer">
+            <span class="price">R$ 49 (teste)</span>
+            <a class="mini-btn" href="#como-funciona">Pedir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Arcano do Ano</h3>
+          <p>Leitura simples e objetiva para compreender a energia do seu ano e agir com clareza.</p>
+          <div class="card-footer">
+            <span class="price">R$ 29</span>
+            <a class="mini-btn" href="#como-funciona">Pedir</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Ritual de Transição</h3>
+          <p>Um ritual guiado (texto + intenções) para fechar ciclos e abrir caminhos com leveza.</p>
+          <div class="card-footer">
+            <span class="price">R$ 39</span>
+            <a class="mini-btn" href="#como-funciona">Pedir</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="section">
+      <img class="divider" src="assets/images/divisor.png" alt="">
+      <h2>Como funciona</h2>
+
+      <ol class="steps">
+        <li><strong>Você pede</strong> pelo botão de contato.</li>
+        <li><strong>Envia seus dados</strong> (nome + data de nascimento; e se tiver, horário/cidade).</li>
+        <li><strong>Recebe seu PDF</strong> em até alguns dias, com leitura e orientações.</li>
+      </ol>
+
+      <div class="cta">
+        <p>Quer pedir uma leitura agora?</p>
+        <!-- troque o link do whatsapp quando quiser -->
+        <a class="btn" href="https://wa.me/55SEUNUMERO" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      </div>
+
+      <p class="disclaimer">
+        Conteúdo espiritual para autoconhecimento • não substitui orientação profissional (médica, psicológica, jurídica etc.).
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aura Prisma • Feito com HTML + CSS</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
