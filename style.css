@@ -85,10 +85,9 @@ a{ color: inherit; }
 }
 
 .hero p{
-  color: var(--muted);
+  color: rgba(245,243,255,0.92);
   margin-bottom: 1.4rem;
-  position:relative;
-  z-index:1;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
 }
 
 .hero-actions{
