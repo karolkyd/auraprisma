@@ -401,3 +401,31 @@ a{ color: inherit; }
   transform: scale(1.08);
   opacity: 1;
 }
+/* PÁGINAS INTERNAS */
+.page-hero{
+  min-height: 70vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding: 7.5rem 1.5rem 3rem; /* espaço por causa do menu fixo */
+}
+
+.page-hero-content{
+  width: min(760px, 100%);
+}
+
+.page-prisma{
+  width: 180px;
+  margin: 0 auto 1rem;
+  display:block;
+  filter: drop-shadow(0 0 26px rgba(160,255,255,.40));
+}
+
+.page-actions{
+  margin-top: 1.2rem;
+  display:flex;
+  justify-content:center;
+  gap:.8rem;
+  flex-wrap:wrap;
+}
