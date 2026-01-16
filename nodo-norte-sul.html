@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nodo Norte & Nodo Sul • Aura Prisma</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="topbar">
+    <a class="brand" href="index.html#topo">Aura Prisma</a>
+    <div class="navlinks">
+      <a href="index.html#servicos">Serviços</a>
+      <a href="sonhos.html">Sonhos</a>
+      <a href="termos.html">Termos</a>
+      <a class="nav-cta" href="index.html#como-funciona">Contato</a>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-content">
+      <img class="page-prisma" src="assets/images/prisma.png" alt="Prisma Aura Prisma">
+      <h1>Nodo Norte & Nodo Sul</h1>
+      <p>Por que eu repito padrões? Zona de conforto × crescimento — com linguagem psicológica e simbólica.</p>
+
+      <div class="page-actions">
+        <a class="btn btn-ghost" href="index.html#servicos">Voltar</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Para que serve</h2>
+      <p>
+        Para entender padrões de repetição, por que mudar dá medo, e por que repetir cansa.
+        É um material de reflexão — sem promessa de “destino”, sem determinismo.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Formato</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>PDF (genérico)</h3>
+          <p>Versão de entrada, sem dados pessoais. Conceitos, exemplos e exercícios práticos de associação.</p>
+          <div class="card-footer">
+            <span class="price">Em breve</span>
+            <a class="mini-btn" href="index.html#como-funciona">Avisar-me</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Leitura personalizada (opcional)</h3>
+          <p>Aplicação dos Nodos no seu mapa (exige data/hora/local). Direção simbólica, sem promessas.</p>
+          <div class="card-footer">
+            <span class="price">Em breve</span>
+            <a class="mini-btn" href="index.html#como-funciona">Entender</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="disclaimer">
+        Este conteúdo é simbólico e reflexivo. Veja <a href="termos.html">Termos & Limites</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Aura Prisma</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
