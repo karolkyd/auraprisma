@@ -375,7 +375,10 @@ a{ color: inherit; }
 
 /* MOBILE */
 @media (max-width: 560px){
-  .navlinks a:not(.nav-cta){ display:none; }
+  .navlinks a{ display:none; }
+  .navlinks a[href="#servicos"],
+  .navlinks a[href="sobre.html"]{ display:inline-block; }
+}
 }
 @media (max-width: 480px){
   .aura{ width: 340px; top:-40px; }
