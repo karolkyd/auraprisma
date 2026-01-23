@@ -378,7 +378,7 @@ a{ color: inherit; }
   .navlinks a{ display:none; }
   .navlinks a[href="#servicos"],
   .navlinks a[href="sobre.html"]{ display:inline-block; }
-}
+
 }
 @media (max-width: 480px){
   .aura{ width: 340px; top:-40px; }
