@@ -477,3 +477,59 @@ a{ color: inherit; }
   .prisma{ width: 200px; }
   .divider{ width: 200px; }
 }
+
+.cartas-escolha{
+  margin: 1.8rem auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 16px;
+  max-width: 920px;
+}
+
+.carta{
+  text-decoration: none;
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 22px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform .25s, border-color .25s, background .25s;
+}
+
+.carta:hover{
+  transform: translateY(-6px);
+  border-color: rgba(199,125,255,.35);
+  background: rgba(199,125,255,.10);
+}
+
+.carta img{
+  width: 100%;
+  max-width: 240px;
+  border-radius: 18px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.30);
+  display: block;
+}
+
+.carta-titulo{
+  font-family:"Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgba(245,243,255,.95);
+  margin-top: 2px;
+}
+
+.carta-sub{
+  font-size: .95rem;
+  color: rgba(245,243,255,.74);
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 860px){
+  .cartas-escolha{ grid-template-columns: 1fr; }
+  .carta img{ max-width: 360px; }
+}
+
