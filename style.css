@@ -550,4 +550,49 @@ a{ color: inherit; }
   margin-bottom: 1.2rem;
 }
 
+/* CAMINHOS - CARTAS DE ENTRADA */
+.caminho{
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow sutil */
+.caminho::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:22px;
+  background:
+    radial-gradient(circle at top,
+      rgba(199,125,255,0.25),
+      transparent 65%);
+  opacity:0;
+  transition: opacity .4s ease;
+  pointer-events:none;
+}
+
+/* ativa o glow no hover */
+.caminho:hover::before{
+  opacity:1;
+}
+
+/* leve elevação */
+.caminho:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(199,125,255,.25);
+}
+.caminho h3{
+  position: relative;
+}
+
+.caminho h3::after{
+  content:"";
+  display:block;
+  width:40px;
+  height:2px;
+  margin:8px auto 0;
+  background: linear-gradient(90deg, var(--a1), var(--a2));
+  border-radius:2px;
+  opacity:.8;
+}
 
