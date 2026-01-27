@@ -533,3 +533,21 @@ a{ color: inherit; }
   .carta img{ max-width: 360px; }
 }
 
+.caminhos h2 {
+  margin-bottom: 0.5rem;
+}
+
+.caminho {
+  text-align: center;
+}
+
+.caminho h3 {
+  font-size: 1.4rem;
+}
+
+.caminho p {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+
